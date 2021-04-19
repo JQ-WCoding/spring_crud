@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class NewsApplication {
-    // for git
+    // for git testing commit
     public static void main(String[] args) {
         SpringApplication.run(NewsApplication.class, args);
     }
