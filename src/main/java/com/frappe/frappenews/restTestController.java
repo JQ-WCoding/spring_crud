@@ -1,13 +1,15 @@
 package com.frappe.frappenews;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 // ResponseBody & Mapper
 public class restTestController {
     @GetMapping("/rest")
-    public String test(){
-        return "Hello World";
+    public String test(@RequestParam(value = "msg", required = false) String msg){
+        return msg;
     }
 }
