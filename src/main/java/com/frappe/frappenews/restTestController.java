@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 // ResponseBody & Mapper
 public class restTestController {
     @GetMapping("/rest")
-    public String test(@RequestParam(value = "msg", required = false) String msg){
-        return msg;
+    public String test(){
+        return "Hello World";
     }
 }
